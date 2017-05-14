@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*start of my code*/
+
+body{
+	font-family: Usual;
+}
+
+.sidebar, #name{
+	text-decoration: none;
+	color: #000000;
+}
+
+#name{
+    top: 15px;
+    left: 5px;
+    margin-top: 10px;
+	position: fixed;
+	padding: 0px 10px 0px 20px;
+	font-size: 20px;
+}
+
+nav{
+	position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.sidebar{
+	font-size: 18px;
+	padding: 4px;
+	display: block;
+}
+
+#name:hover, .sidebar:hover{
+	color: #ffccff;
+}
+
+/*body*/
+
+#work{
+	padding: 15px 0px 50px 250px;
+}
+
+.images{
+	margin-left: 210px;
+	margin-right: 50px;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+}
+
+.portfolio{
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #000000;
+}
+
+.container:hover .overlay{
+	opacity: .75;
+}
+
+.text{
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	bottom: 20%;
+	right: 50%;
+	-ms-transform: translate(-50%, -50%);
+}
+
+/*footer*/
+
+.links{
+	display: block;
+	position: fixed;
+	left: 2%;
+	bottom: 5%;
+}
+/*
+@media (min-width: 1px) and (max-width: 400px){
+	.images{width: 85%; margin: 100px 0px 50px 0px; padding: 20px;}
+	.container{display: block; width: 100%;}
+	#name{left: -5px; padding-top: 10px;}
+	.sidebar{font-size: 18px; display: inline-block;}
+	#blue{width: 100%; height: 100px;}
+	nav{position: absolute; top: 55px; left: 10px; padding-bottom: 95px;}
+	.links{bottom:5%; left: 40%; position: relative;}
+}
+@media (min-width: 401px) and (max-width: 640px){
+	.images{width: 100%; margin: 150px 0px 0px 0px;}
+	#name{left: -5px; padding-top: 10px;}
+	.sidebar{font-size: 18px;}
+	#blue{width: 100%; height: 100px;}
+	.sidebar{display: inline-block;}
+	nav{top:55px; left: 10px;}
+	.links{bottom:5%; right: 50%;}
+}
+
+@media (min-width: 641px) and (max-width: 750px){
+	
+
+}
+
+@media (min-width: 751px) and (max-width: 1000px){
+	.social{width: 25px; height: 25px;}
+	#in{width: 20px;}
+	#behance{width: 20px;}
+	#git{width: 25px;}
+	.images{margin-left: 110px;}
+	.container{width: 40%;}
+}
+
+@media (min-width: 1001px) and (max-width: 982px){
+
+}*/
