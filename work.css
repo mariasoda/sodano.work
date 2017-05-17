@@ -53,11 +53,12 @@ body{
 }
 
 nav{
-	padding: 30px 0px 0px 30px;
+	top: 50px;
+	left: 70px;
 	position: fixed;
 }
 #m{
-	width: 60px;
+	width: 100px;
 	padding-bottom: 10px;
 	user-drag: none; 
 	user-select: none;
@@ -66,6 +67,16 @@ nav{
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
+
+/*delete me*/
+
+.new{
+	text-decoration: underline;
+	color: #000;
+}
+
+
+
 .sidebar, .social{
 	text-decoration: none;
 	color: #000000;
@@ -77,21 +88,23 @@ nav{
 	display: block;
 }
 
-.sidebar:hover, .social:hover{
+.sidebar:hover, .social:hover, .new:hover{
 	color: #ffccff;
 }
 
 /*body*/
 
-#work{
-	padding: 15px 0px 50px 250px;
+#error{
+	position: fixed;
+	top: 50%;
+	right: 50%;
+	text-align: center;
 }
-
 .images{
 	margin-left: 450px;
 	margin-right: 250px;
-	padding-bottom: 30px;
-	padding-top: 30px;
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 .container{
@@ -135,24 +148,24 @@ nav{
 
 /*footer*/
 
-.links{
+#footer{
+	font-size: 12px;
 	display: block;
 	position: fixed;
-	left: 30px;
+	left: 70px;
 	bottom: 5%;
-	width: 100px;
+	width: 150px;
 	line-height: 20px;
 }
 
-/*
+
 @media (min-width: 1px) and (max-width: 400px){
-	.images{width: 100%; margin: 100px 0px 50px 0px; padding: 20px;}
-	.container{display: block; width: 100%;}
-	#name{left: -5px; padding-top: 10px;}
-	.sidebar{font-size: 18px; display: inline-block;}
-	#blue{width: 100%; height: 100px;}
-	nav{position: absolute; top: 55px; left: 10px; padding-bottom: 95px;}
-	.links{bottom:5%; left: 40%; position: relative;}
+	.images{width: 100%; margin: 50px 0px 0px 0px;}
+	#m{display: none;}
+	.sidebar{font-size: 20px; display: inline-block;}
+	nav{position: fixed; top: 20px;}
+	.text{font-size: 18px;}
+	#footer{position: relative; bottom: 20px; left: 20px;}
 }
 @media (min-width: 401px) and (max-width: 640px){
 	.images{width: 90%;}
@@ -180,4 +193,4 @@ nav{
 
 @media (min-width: 1001px) and (max-width: 982px){
 
-}*/
+}
