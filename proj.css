@@ -48,6 +48,10 @@ table {
 }
 /*start of my code*/
 
+body{
+	font-family: Clear Sans;
+}
+
 nav{
 	padding: 38px 0px 0px 40px;
 	position: fixed;
@@ -63,7 +67,7 @@ nav{
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
-.sidebar, .social{
+.sidebar, .social, #infolink{
 	text-decoration: none;
 	color: #000000;
 }
@@ -81,69 +85,64 @@ nav{
 	letter-spacing: 1px;
 }
 
-.sidebar:hover, .text:hover{
+.sidebar:hover, .arrow:hover{
 	color: #ffccff;
 }
 
 /*body*/
-body{
-	font-family: Clear Sans;
+p{
+	padding: 0px 120px 50px 0px;
+	line-height: 18px;
+	font-size: 12px;
 }
 
-#container{
-	margin-left: 300px;
-	top:30px;
-	width: 500px;
+.caphead{
+	border-bottom: .5px solid black;
+	width: 100%;
+}
+
+.images{
+	margin-left: 450px;
+	padding-bottom: 50px;
 	padding-top: 50px;
 }
 
-h1{
-	font-family: Cooper Std;
-	padding-bottom: 10px;
+
+.portfolio{
+	width: 90%;
+	display: block;
+	padding-bottom: 20px;
 }
 
-#buttons{
-		padding-top: 30px;
-}
-
-#connect{
-	border-bottom: .5px solid black;
-}
-
-#connect, .social{
+.arrow{
 	font-size: 12px;
-}
-
-#top{
-	padding-top: 18px;
-}
-
-.x{
 	text-decoration: none;
-}
-
-.x:hover{
 	color: black;
 }
 
-.social{
-	display: block;
-	padding-top: 10px;
+#all{
+	left: 50%;
 }
 
-p{
+#next{
+	text-align: right;
+}
+
+.caption{
 	font-size: 12px;
+	margin: 20px 0px 15px 0px;
 	line-height: 18px;
+	padding-right: 10px;
 }
 
-#spotify{
-	padding-top: 30px;
+#infolink{
+	font-size: 14px;
+	border-bottom: .5px solid black
 }
-
 /*footer*/
 
 #footer{
-	font-size: 10px;
+	font-size: 12px;
 	display: block;
 	position: fixed;
 	left: 70px;
@@ -154,7 +153,10 @@ p{
 
 
 @media (min-width: 1px) and (max-width: 640px){
-	#container{left: 0px; padding: 25px;}
+	p, .caption{padding-left: 20px;}
+	p{padding-right: 30px;}
+	.portfolio, .overlay{width: 100%;}
+	.images{margin: 15px 0px 0px 0px;}
 	#abt{padding: 0px;}
 	nav{position: absolute; padding:0px;}
 	#m{display: none;}

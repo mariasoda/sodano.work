@@ -53,12 +53,13 @@ body{
 }
 
 nav{
-	top: 50px;
-	left: 70px;
+	padding: 38px 0px 0px 40px;
 	position: fixed;
 }
+
 #m{
-	width: 100px;
+	left: -20px;
+	width: 150px;
 	padding-bottom: 10px;
 	user-drag: none; 
 	user-select: none;
@@ -68,41 +69,30 @@ nav{
 	-ms-user-select: none;
 }
 
-/*delete me*/
 
-.new{
-	text-decoration: underline;
-	color: #000;
+#abt{
+	padding-top: 10px;
 }
 
-
-
-.sidebar, .social{
+.sidebar{
+	padding-left: 30px;
+	padding-top: 5px;
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	text-decoration: none;
 	color: #000000;
 }
 
-.sidebar{
-	font-size: 18px;
-	padding: 4px;
-	display: block;
-}
-
-.sidebar:hover, .social:hover, .new:hover{
+.sidebar:hover{
 	color: #ffccff;
 }
 
 /*body*/
 
-#error{
-	position: fixed;
-	top: 50%;
-	right: 50%;
-	text-align: center;
-}
 .images{
 	margin-left: 450px;
-	margin-right: 250px;
 	padding-bottom: 50px;
 	padding-top: 50px;
 }
@@ -113,9 +103,8 @@ nav{
 }
 
 .portfolio{
-	width: 100%;
+	width: 90%;
 	display: block;
-	height: auto;
 }
 
 .overlay{
@@ -125,22 +114,21 @@ nav{
 	left: 0;
 	right: 0;
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #000000;
 }
 
 .container:hover .overlay{
-	opacity: .75;
+	opacity: .8;
 }
 
 .text{
-	font-family: Georgia;
 	color: white;
-	font-size: 24px;
+	font-size: 18px;
 	position: absolute;
-	bottom: 10%;
+	bottom: 5%;
 	left: 5%;
 	-ms-transform: translate(-50%, -50%);
 	line-height: 32px;
@@ -149,7 +137,7 @@ nav{
 /*footer*/
 
 #footer{
-	font-size: 12px;
+	font-size: 10px;
 	display: block;
 	position: fixed;
 	left: 70px;
@@ -159,38 +147,20 @@ nav{
 }
 
 
-@media (min-width: 1px) and (max-width: 400px){
-	.images{width: 100%; margin: 50px 0px 0px 0px;}
+@media (min-width: 1px) and (max-width: 640px){
+	.portfolio, .overlay{width: 100%;}
+	.images{margin: 15px 0px 0px 0px;}
+	#abt{padding: 0px;}
+	nav{position: absolute; padding:0px;}
 	#m{display: none;}
-	.sidebar{font-size: 20px; display: inline-block;}
-	nav{position: fixed; top: 20px;}
-	.text{font-size: 18px;}
-	#footer{position: relative; bottom: 20px; left: 20px;}
-}
-@media (min-width: 401px) and (max-width: 640px){
-	.images{width: 90%;}
-	#name{left: -5px; padding-top: 10px;}
-	.sidebar{font-size: 18px;}
-	#blue{width: 100%; height: 100px;}
-	.sidebar{display: inline-block;}
-	nav{top:55px; left: 10px;}
-	.links{bottom:5%; right: 50%;}
+	.sidebar{font-size: 12px; display: inline-block; padding: 5px; margin-left: 10px;}
+	#footer{position: relative; bottom: 10px; left: 20px;}
 }
 
-@media (min-width: 641px) and (max-width: 750px){
-	
-
+@media (min-width: 641px) and (max-width: 800px){
+	.images{margin-left: 250px;}
 }
 
-@media (min-width: 751px) and (max-width: 1000px){
-	.social{width: 25px; height: 25px;}
-	#in{width: 20px;}
-	#behance{width: 20px;}
-	#git{width: 25px;}
-	.images{margin-left: 110px;}
-	.container{width: 40%;}
-}
-
-@media (min-width: 1001px) and (max-width: 982px){
-
+@media (min-width: 801px) and (max-width: 1250px){
+	.images{margin-left: 300px;}
 }

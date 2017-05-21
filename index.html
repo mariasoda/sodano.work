@@ -4,23 +4,53 @@
 	<title>Maria Sodano Portfolio</title>
 	<link rel="stylesheet" href="work.css">
 	<link rel="icon" href="images/m.jpg">
-	<script src="https://use.typekit.net/gzi2osx.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+	$(document).ready(function(){
+		var windowsize = $(window).width();
+	if (windowsize > 640) {
+		$("#blue").hover(function(){
+        $("#name").text("About", 'slow');
+    });
+});
+</script>
 </head>
 <body>
-<div>
-	<p id="error">This site is currently under construction. <br>Please view my work on <a href="http://be.net/mariasodano" class="new">Behance</a> or <a href="mailto:maria@sodano.work>Subject=Is this thing on?"title="maria@sodano.work" class="new">Contact Me</a>
-</div>
-	<!--
 	<nav>
 		<a href="index.html"><img src="images/m.jpg" id="m"></a>
-		<a class="sidebar" title="graphic designer" href="bio.html">Maria Sodano</a>
+		<a href="index.html" class="sidebar" title="graphic designer">Maria Sodano</a>
+		<a class="sidebar" href="bio.html" id="abt">About</a>
 		<a class="sidebar" href="images/resume.pdf">Resume</a>
 		<a class="sidebar" href="mailto:maria@sodano.work?Subject=Hello"title="maria@sodano.work">Contact</a>
 	</nav>
-
-
 <div class="images">
+
+	<a href="stitch.html">
+		<div class="container">
+			<img class="portfolio" src="images/degree.jpg" alt="Stitched Type">
+				<div class="overlay">
+					<div class="text">Stitched Type</div>
+				</div>
+		</div>
+	</a>
+
+	<a href="crj.html">
+		<div class="container">
+			<img class="portfolio" src="images/crj.jpg" alt="100 Views">
+				<div class="overlay">
+					<div class="text">E&#8226;MO&#8226;TION Box Set</div>
+				</div>
+		</div>
+	</a>
+
+	<a href="miami.html">
+		<div class="container">
+			<img class="portfolio" src="images/miami.png" alt="Miami Redesign">
+				<div class="overlay">
+					<div class="text">Miami Logo Redesign</div>
+				</div>
+		</div>
+	</a>
+
 	<a href="zip.html">
 		<div class="container">
 			<img class="portfolio" src="images/zip.jpg" alt="Zipcar Responsive Logo">
@@ -48,25 +78,7 @@
 		</div>
 	</a>
 
-<a href="stitch.html">
-		<div class="container">
-			<img class="portfolio" src="images/degree.jpg" alt="Stitched Type">
-				<div class="overlay">
-					<div class="text">Stitched Type <br>BFA Thesis</div>
-				</div>
-		</div>
-	</a>
-
-<a href="miami.html">
-		<div class="container">
-			<img class="portfolio" src="images/miami.png" alt="Miami Redesign">
-				<div class="overlay">
-					<div class="text">Miami Logo Redesign</div>
-				</div>
-		</div>
-	</a>
-
-<a href="info.html">
+	<a href="info.html">
 		<div class="container">
 			<img class="portfolio" src="images/info.png" alt="100 Views">
 				<div class="overlay">
@@ -75,21 +87,6 @@
 		</div>
 	</a>
 
-		<div class="container">
-			<img class="portfolio" src="images/crj.jpg" alt="Emotion Box Set">
-				<div class="overlay">
-					<div class="text">Coming Soon</div>
-				</div>
-		</div>
-
-<a href="web.html">
-		<div class="container">
-			<img class="portfolio" src="images/degree.jpg" alt="Emotion Box Set">
-				<div class="overlay">
-					<div class="text">Web Projects</div>
-				</div>
-		</div>
-	</a>-->
 </div>
 
 	
