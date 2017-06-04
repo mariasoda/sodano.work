@@ -79,6 +79,7 @@ nav{
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	position: relative;
 }
 
 .sidebar:hover, .text:hover{
@@ -95,6 +96,7 @@ body{
 	top:30px;
 	width: 500px;
 	padding-top: 50px;
+	position: fixed;
 }
 
 h1{
@@ -154,16 +156,18 @@ p{
 
 
 @media (min-width: 1px) and (max-width: 640px){
-	#container{left: 0px; padding: 25px;}
+	#container{margin-left: 25px; padding-top: 50px;}
 	#abt{padding: 0px;}
 	nav{position: absolute; padding:0px;}
 	#m{display: none;}
-	.sidebar{font-size: 12px; display: inline-block; padding: 5px; margin-left: 10px;}
-	#footer{position: relative; bottom: 10px; left: 20px;}
+	p{width: 350px;}
+	.sidebar{font-size: 12px; display: inline-block; padding: 20px 0px 0px 0px; margin-left: 15px;}
+	#footer{bottom: 10px; left: 20px;}
 }
 
 @media (min-width: 641px) and (max-width: 800px){
 	.images{margin-left: 250px;}
+	p{width: 400px;}
 }
 
 @media (min-width: 801px) and (max-width: 1250px){
