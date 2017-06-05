@@ -85,7 +85,7 @@ nav{
 	letter-spacing: 1px;
 }
 
-.sidebar:hover, .arrow:hover, .web:hover{
+.sidebar:hover, .arrow:hover, .web:hover, #infolink:hover{
 	color: #ffccff;
 }
 
