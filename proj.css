@@ -85,7 +85,7 @@ nav{
 	letter-spacing: 1px;
 }
 
-.sidebar:hover, .arrow:hover, .web:hover, #infolink:hover{
+.sidebar:hover, .arrow:hover, .web:hover, #infolink:hover, #credit:hover{
 	color: #ffccff;
 }
 
@@ -100,12 +100,12 @@ a{
 	cursor: pointer;
 }
 
-.caphead, .web{
+.caphead, .web, #credit{
 	border-bottom: .5px solid black;
 	width: 100%;
 }
 
-.web{
+.web, .arrow, #credit{
 	text-decoration: none;
 	color: #000;
 }
@@ -124,9 +124,7 @@ a{
 }
 
 .arrow{
-	font-size: 12px;
-	text-decoration: none;
-	color: black;
+	font-size: 10px;
 }
 
 #all{
@@ -148,6 +146,7 @@ a{
 	font-size: 14px;
 	border-bottom: .5px solid black
 }
+
 /*footer*/
 
 #footer{
