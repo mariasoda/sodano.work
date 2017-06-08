@@ -136,6 +136,7 @@ h1{
 p{
 	font-size: 12px;
 	line-height: 18px;
+	width: 455px;
 }
 
 #spotify{
@@ -155,7 +156,7 @@ p{
 }
 
 
-@media (min-width: 1px) and (max-width: 640px){
+@media (min-width: 1px) and (max-width: 649px){
 	#container{margin-left: 25px; padding-top: 50px;}
 	#abt{padding: 0px;}
 	nav{position: absolute; padding:0px;}
@@ -165,9 +166,15 @@ p{
 	#footer{bottom: 10px; left: 20px;}
 }
 
-@media (min-width: 641px) and (max-width: 800px){
+@media (min-width: 650px) and (max-width: 700px){
+	p{width: 350px;}
+	#container{margin-left: 275px;}
+}
+
+@media (min-width: 701px) and (max-width: 800px){
 	.images{margin-left: 250px;}
-	p{width: 400px;}
+	p{width: 390px;}
+	#container{margin-left: 275px;}
 }
 
 @media (min-width: 801px) and (max-width: 1250px){
