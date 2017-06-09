@@ -85,7 +85,7 @@ nav{
 	letter-spacing: 1px;
 }
 
-.sidebar:hover, .arrow:hover, .web:hover, #infolink:hover, #credit:hover{
+.sidebar:hover, .arrow:hover, .web:hover, #infolink:hover{
 	color: #ffccff;
 }
 
@@ -100,12 +100,12 @@ a{
 	cursor: pointer;
 }
 
-.caphead, .web, #credit{
+.caphead, .web{
 	border-bottom: .5px solid black;
 	width: 100%;
 }
 
-.web, .arrow, #credit{
+.web, .arrow{
 	text-decoration: none;
 	color: #000;
 }
