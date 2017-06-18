@@ -149,8 +149,8 @@ nav{
 
 @media (min-width: 1px) and (max-width: 640px){
 	.portfolio, .overlay{width: 100%;}
-	.images{margin: 15px 0px 0px 0px;}
-	#abt{padding: 0px;}
+	.images{margin: 15px 0 0 0;}
+	#abt{padding: 0;}
 	nav{position: absolute; padding:0px;}
 	#m{display: none;}
 	.sidebar{font-size: 12px; display: inline-block; padding: 5px; margin-left: 10px;}
