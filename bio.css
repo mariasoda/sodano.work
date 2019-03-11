@@ -63,7 +63,7 @@ nav{
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
-.sidebar, .social{
+.sidebar, .social, a{
 	text-decoration: none;
 	color: #000000;
 }
@@ -82,7 +82,7 @@ nav{
 	position: relative;
 }
 
-.sidebar:hover, .text:hover{
+.sidebar:hover, .text:hover, a:hover{
 	color: #ffccff;
 }
 
